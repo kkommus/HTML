@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logi sisse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f2f2;
+            position: relative;
+        }
+        nav {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+        }
+        .logo {
+            float: left;
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        input, button {
+            padding: 8px;
+            margin: 5px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <h1>Keiti veebileht</h1>
+            </div>
+            <img src="https://picsum.photos/1200/300" alt="Bänneri pilt">
+        </div>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html">Avaleht</a></li>
+                <li><a href="teenused.html">Teenused</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <div class="content">
+            <!-- Login form as needed for your application -->
+            <h2>Logi sisse</h2>
+            <form>
+                <tr>
+                    <td>Kasutaja: </td>
+                    <td><input type="text" placeholder="sinu@gmail.ee"></td>
+                </tr>
+            
+
+                <label for="password">Parool:</label>
+                <input type="password" id="password" name="password" required>
+                <tr>
+                    <td>Pea mind meeles:</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <button type="submit">Logi sisse</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

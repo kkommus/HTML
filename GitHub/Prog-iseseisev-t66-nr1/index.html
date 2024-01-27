@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Keiti Kõmmus">
+    <title>Kodutöö nr1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        nav {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .discount {
+            text-decoration: line-through;
+            color: #999;
+        }
+        input, button {
+            padding: 8px;
+            margin: 5px;
+            width: 100%;
+        }
+        .logo {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <h1>Keiti veebileht</h1>
+            </div>
+            <img src="https://picsum.photos/1200/300" alt="Bänneri pilt">
+        </div>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html">Avaleht</a></li>
+                <li><a href="#" onclick="avaneTeenused()">Teenused</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <div class="content">
+            <h2 id="tooted">Tooted</h2>
+            <table>
+                <tr>
+                    <td>
+                        <img src="https://picsum.photos/300/300" alt="Toode 1">
+                        <p>Toode 1</p>
+                        <p>Hind: <strong><s>459 EUR</s> 299 EUR</strong></p>
+                        <button>Osta</button>
+                    </td>
+                    <td>
+                        <img src="https://picsum.photos/300/300" alt="Toode 2">
+                        <p>Toode 2</p>
+                        <p>Hind: <strong>579€</strong></p>
+                        <button>Osta</button>
+                    </td>
+                    <td>
+                        <img src="https://picsum.photos/300/300" alt="Toode 3">
+                        <p>Toode 3</p>
+                        <p>Hind: <strong>679€</strong></p>
+                        <button>Osta</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://picsum.photos/300/300" alt="Toode 4">
+                        <p>Toode 4</p>
+                        <p>Hind: <strong>379€</strong></p>
+                        <button>Osta</button>
+                    </td>
+                    <td>
+                        <img src="https://picsum.photos/300/300" alt="Toode 5">
+                        <p>Toode 5</p>
+                        <p>Hind: <strong>778€</strong></p>
+                        <button>Osta</button>
+                    </td>
+                    <td>
+                        <img src="https://picsum.photos/300/300" alt="Toode 6">
+                        <p>Toode 6</p>
+                        <p>Hind: <strong>979€</strong></p>
+                        <button>Osta</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function avaneTeenused() {
+            window.location.href = "teenused.html";
+        }
+    </script>
+</body>
+</html>
